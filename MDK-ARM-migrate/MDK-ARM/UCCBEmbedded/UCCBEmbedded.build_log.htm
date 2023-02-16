@@ -1,0 +1,235 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: c Administrator, c, LIC=TIVNB-2I6E9-Z9SG9-4WRNY-JGC9X-PV7UK
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.38.0.0
+Toolchain Path:  d:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.6.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TARMCM1.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+F:\Git-category\Git-Interface\UCCBEmbedded-103\MDK-ARM-migrate\MDK-ARM\UCCBEmbedded.uvprojx
+Project File Date:  02/16/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'd:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'UCCBEmbedded'
+assembling startup_stm32f042x6.s...
+compiling usb_device.c...
+../Src/main.c(56): warning: In file included from...
+../Src/slcan/slcan.h(41): error: unknown type name 'CanRxMsgTypeDef'
+uint8_t slcanReciveCanFrame(CanRxMsgTypeDef *pRxMsg);
+                            ^
+../Src/main.c(147): error: no member named 'pTxMsg' in 'struct __CAN_HandleTypeDef'
+        hcan.pTxMsg = &CanTxBuffer;
+        ~~~~ ^
+../Src/main.c(148): error: no member named 'pRxMsg' in 'struct __CAN_HandleTypeDef'
+        hcan.pRxMsg = &CanRxBuffer;
+        ~~~~ ^
+../Src/main.c(156): error: call to undeclared function 'HAL_CAN_Receive_IT'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+                HAL_CAN_Receive_IT(&hcan, CAN_FIFO0);
+                ^
+../Src/main.c(156): note: did you mean 'HAL_UART_Receive_IT'?
+../Drivers/STM32F0xx_HAL_Driver/Inc\stm32f0xx_hal_uart.h(1531): note: 'HAL_UART_Receive_IT' declared here
+HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+                  ^
+../Src/main.c(156): error: use of undeclared identifier 'CAN_FIFO0'
+                HAL_CAN_Receive_IT(&hcan, CAN_FIFO0);
+                                          ^
+../Src/main.c(174): error: no member named 'pRxMsg' in 'struct __CAN_HandleTypeDef'
+                        slcanReciveCanFrame(hcan.pRxMsg);
+                                            ~~~~ ^
+../Src/main.c(176): error: call to undeclared function 'HAL_CAN_Receive_IT'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+                        HAL_CAN_Receive_IT(&hcan, CAN_FIFO0);
+                        ^
+../Src/main.c(176): error: use of undeclared identifier 'CAN_FIFO0'
+                        HAL_CAN_Receive_IT(&hcan, CAN_FIFO0);
+                                                  ^
+../Src/main.c(189): error: call to undeclared function 'HAL_CAN_Receive_IT'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+        HAL_CAN_Receive_IT(hcan, CAN_FIFO0);
+        ^
+../Src/main.c(189): error: use of undeclared identifier 'CAN_FIFO0'
+        HAL_CAN_Receive_IT(hcan, CAN_FIFO0);
+                                 ^
+../Src/main.c(254): error: no member named 'SJW' in 'CAN_InitTypeDef'
+  hcan.Init.SJW = CAN_SJW_2TQ;
+  ~~~~~~~~~ ^
+../Src/main.c(255): error: no member named 'BS1' in 'CAN_InitTypeDef'
+  hcan.Init.BS1 = CAN_BS1_11TQ;
+  ~~~~~~~~~ ^
+../Src/main.c(256): error: no member named 'BS2' in 'CAN_InitTypeDef'
+  hcan.Init.BS2 = CAN_BS2_4TQ;
+  ~~~~~~~~~ ^
+../Src/main.c(257): error: no member named 'TTCM' in 'CAN_InitTypeDef'
+  hcan.Init.TTCM = DISABLE;
+  ~~~~~~~~~ ^
+../Src/main.c(258): error: no member named 'ABOM' in 'CAN_InitTypeDef'
+  hcan.Init.ABOM = ENABLE;
+  ~~~~~~~~~ ^
+../Src/main.c(259): error: no member named 'AWUM' in 'CAN_InitTypeDef'
+  hcan.Init.AWUM = ENABLE;
+  ~~~~~~~~~ ^
+../Src/main.c(260): error: no member named 'NART' in 'CAN_InitTypeDef'
+  hcan.Init.NART = DISABLE;
+  ~~~~~~~~~ ^
+../Src/main.c(261): error: no member named 'RFLM' in 'CAN_InitTypeDef'
+  hcan.Init.RFLM = DISABLE;
+  ~~~~~~~~~ ^
+../Src/main.c(262): error: no member named 'TXFP' in 'CAN_InitTypeDef'
+  hcan.Init.TXFP = DISABLE;
+  ~~~~~~~~~ ^
+19 errors generated.
+compiling main.c...
+../Src/usbd_conf.c(42): error: too many arguments provided to function-like macro invocation
+void Error_Handler(void);
+                   ^
+../Inc/main.h(81): note: macro 'Error_Handler' defined here
+#define Error_Handler() _Error_Handler(__FILE__, __LINE__)
+        ^
+../Src/usbd_conf.c(42): error: variable has incomplete type 'void'
+void Error_Handler(void);
+     ^
+2 errors generated.
+compiling usbd_conf.c...
+compiling usbd_desc.c...
+../Src/stm32f0xx_it.c(58): error: unknown type name 'PCD_HandleTypeDef'
+extern PCD_HandleTypeDef hpcd_USB_FS;
+       ^
+../Src/stm32f0xx_it.c(130): error: call to undeclared function 'HAL_IncTick'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  HAL_IncTick();
+  ^
+../Src/stm32f0xx_it.c(151): error: call to undeclared function 'HAL_PCD_IRQHandler'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  HAL_PCD_IRQHandler(&hpcd_USB_FS);
+  ^
+3 errors generated.
+compiling stm32f0xx_it.c...
+../Src/stm32f0xx_hal_msp.c(69): error: call to undeclared function '__HAL_RCC_SYSCFG_CLK_ENABLE'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  __HAL_RCC_SYSCFG_CLK_ENABLE();
+  ^
+../Src/stm32f0xx_hal_msp.c(70): error: call to undeclared function '__HAL_RCC_PWR_CLK_ENABLE'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  __HAL_RCC_PWR_CLK_ENABLE();
+  ^
+../Src/stm32f0xx_hal_msp.c(85): error: unknown type name 'CAN_HandleTypeDef'
+void HAL_CAN_MspInit(CAN_HandleTypeDef* hcan)
+                     ^
+../Src/stm32f0xx_hal_msp.c(87): error: use of undeclared identifier 'GPIO_InitTypeDef'
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
+  ^
+../Src/stm32f0xx_hal_msp.c(88): error: use of undeclared identifier 'CAN'
+  if(hcan->Instance==CAN)
+                     ^
+../Src/stm32f0xx_hal_msp.c(94): error: call to undeclared function '__HAL_RCC_CAN1_CLK_ENABLE'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    __HAL_RCC_CAN1_CLK_ENABLE();
+    ^
+../Src/stm32f0xx_hal_msp.c(96): error: call to undeclared function '__HAL_RCC_GPIOB_CLK_ENABLE'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    __HAL_RCC_GPIOB_CLK_ENABLE();
+    ^
+../Src/stm32f0xx_hal_msp.c(101): error: use of undeclared identifier 'GPIO_InitStruct'
+    GPIO_InitStruct.Pin = GPIO_PIN_8|GPIO_PIN_9;
+    ^
+../Src/stm32f0xx_hal_msp.c(101): error: use of undeclared identifier 'GPIO_PIN_8'
+    GPIO_InitStruct.Pin = GPIO_PIN_8|GPIO_PIN_9;
+                          ^
+../Src/stm32f0xx_hal_msp.c(101): error: use of undeclared identifier 'GPIO_PIN_9'
+    GPIO_InitStruct.Pin = GPIO_PIN_8|GPIO_PIN_9;
+                                     ^
+../Src/stm32f0xx_hal_msp.c(102): error: use of undeclared identifier 'GPIO_InitStruct'
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+    ^
+../Src/stm32f0xx_hal_msp.c(102): error: use of undeclared identifier 'GPIO_MODE_AF_PP'
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+                           ^
+../Src/stm32f0xx_hal_msp.c(103): error: use of undeclared identifier 'GPIO_InitStruct'
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    ^
+../Src/stm32f0xx_hal_msp.c(103): error: use of undeclared identifier 'GPIO_NOPULL'
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+                           ^
+../Src/stm32f0xx_hal_msp.c(104): error: use of undeclared identifier 'GPIO_InitStruct'
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+    ^
+../Src/stm32f0xx_hal_msp.c(104): error: use of undeclared identifier 'GPIO_SPEED_FREQ_HIGH'
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+                            ^
+../Src/stm32f0xx_hal_msp.c(105): error: use of undeclared identifier 'GPIO_InitStruct'
+    GPIO_InitStruct.Alternate = GPIO_AF4_CAN;
+    ^
+../Src/stm32f0xx_hal_msp.c(105): error: use of undeclared identifier 'GPIO_AF4_CAN'
+    GPIO_InitStruct.Alternate = GPIO_AF4_CAN;
+                                ^
+../Src/stm32f0xx_hal_msp.c(106): error: call to undeclared function 'HAL_GPIO_Init'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+    ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling stm32f0xx_hal_msp.c...
+compiling usbd_cdc_if.c...
+compiling stm32f0xx_hal_pcd_ex.c...
+compiling stm32f0xx_ll_usb.c...
+compiling stm32f0xx_hal_pcd.c...
+compiling stm32f0xx_hal_rcc_ex.c...
+compiling stm32f0xx_hal_rcc.c...
+compiling stm32f0xx_hal.c...
+compiling stm32f0xx_hal_i2c_ex.c...
+compiling stm32f0xx_hal_gpio.c...
+compiling stm32f0xx_hal_dma.c...
+compiling stm32f0xx_hal_cortex.c...
+compiling stm32f0xx_hal_pwr.c...
+compiling stm32f0xx_hal_pwr_ex.c...
+compiling stm32f0xx_hal_i2c.c...
+compiling stm32f0xx_hal_flash.c...
+compiling stm32f0xx_hal_flash_ex.c...
+compiling stm32f0xx_hal_exti.c...
+compiling stm32f0xx_hal_iwdg.c...
+compiling stm32f0xx_hal_can.c...
+compiling stm32f0xx_hal_tim.c...
+compiling stm32f0xx_hal_tim_ex.c...
+compiling stm32f0xx_hal_uart_ex.c...
+compiling system_stm32f0xx.c...
+compiling usbd_core.c...
+compiling stm32f0xx_hal_uart.c...
+compiling usbd_ctlreq.c...
+compiling usbd_ioreq.c...
+compiling usbd_cdc.c...
+"UCCBEmbedded\UCCBEmbedded.axf" - 43 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F0xx_DFP.2.1.1.pack
+                Keil.STM32F0xx_DFP.2.1.1
+                STMicroelectronics STM32F0 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_UCCBEmbedded
+  D:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  D:/Users/Administrator/AppData/Local/Arm/Packs/Keil/STM32F0xx_DFP/2.1.1/Drivers/CMSIS/Device/ST/STM32F0xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Target not created.
+Build Time Elapsed:  00:00:08
+</pre>
+</body>
+</html>
