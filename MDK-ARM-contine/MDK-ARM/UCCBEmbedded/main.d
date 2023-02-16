@@ -1,41 +1,48 @@
-uccbembedded/main.o: ..\Src\main.c ..\Inc\main.h \
-  ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal.h \
-  ..\Inc\stm32f0xx_hal_conf.h \
-  ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_rcc.h \
-  ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_def.h \
-  ..\Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h \
-  ..\Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f042x6.h \
-  ..\Drivers\CMSIS\Include\core_cm0.h \
-  d:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  ..\Drivers\CMSIS\Include\core_cmInstr.h \
-  ..\Drivers\CMSIS\Include\cmsis_armcc_V6.h \
-  ..\Drivers\CMSIS\Include\core_cmFunc.h \
-  ..\Drivers\CMSIS\Device\ST\STM32F0xx\Include\system_stm32f0xx.h \
-  d:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
-  ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_rcc_ex.h \
-  ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_gpio.h \
-  ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_gpio_ex.h \
-  ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_dma.h \
-  ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_dma_ex.h \
-  ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_cortex.h \
-  ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_can.h \
-  ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_flash.h \
-  ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_flash_ex.h \
-  ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_i2c.h \
-  ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_i2c_ex.h \
-  ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_iwdg.h \
-  ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_pcd.h \
-  ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_pcd_ex.h \
-  ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_pwr.h \
-  ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_pwr_ex.h \
-  ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_uart.h \
-  ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_uart_ex.h \
-  ..\Inc\usb_device.h \
-  ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_def.h \
-  ..\Inc\usbd_conf.h d:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
-  d:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h ..\Inc\usbd_cdc_if.h \
-  ..\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Inc\usbd_cdc.h \
-  ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h \
-  ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_core.h \
-  ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h \
-  ..\Src\slcan\slcan.h ..\Src\slcan\slcan_additional.h
+uccbembedded\main.o: ../Src/main.c
+uccbembedded\main.o: ../Inc/main.h
+uccbembedded\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h
+uccbembedded\main.o: ../Inc/stm32f0xx_hal_conf.h
+uccbembedded\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_rcc.h
+uccbembedded\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h
+uccbembedded\main.o: ../Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h
+uccbembedded\main.o: ../Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f042x6.h
+uccbembedded\main.o: ../Drivers/CMSIS/Include/core_cm0.h
+uccbembedded\main.o: d:\Keil_v5\ARM\ARMC\Bin\..\include\stdint.h
+uccbembedded\main.o: ../Drivers/CMSIS/Include/core_cmInstr.h
+uccbembedded\main.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+uccbembedded\main.o: ../Drivers/CMSIS/Include/core_cmFunc.h
+uccbembedded\main.o: ../Drivers/CMSIS/Device/ST/STM32F0xx/Include/system_stm32f0xx.h
+uccbembedded\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h
+uccbembedded\main.o: d:\Keil_v5\ARM\ARMC\Bin\..\include\stdio.h
+uccbembedded\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_rcc_ex.h
+uccbembedded\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_gpio.h
+uccbembedded\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_gpio_ex.h
+uccbembedded\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma.h
+uccbembedded\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma_ex.h
+uccbembedded\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_cortex.h
+uccbembedded\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_can.h
+uccbembedded\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_flash.h
+uccbembedded\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_flash_ex.h
+uccbembedded\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c.h
+uccbembedded\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c_ex.h
+uccbembedded\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_iwdg.h
+uccbembedded\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pcd.h
+uccbembedded\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pcd_ex.h
+uccbembedded\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h
+uccbembedded\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h
+uccbembedded\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h
+uccbembedded\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
+uccbembedded\main.o: ../Inc/usb_device.h
+uccbembedded\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h
+uccbembedded\main.o: ../Inc/usbd_conf.h
+uccbembedded\main.o: d:\Keil_v5\ARM\ARMC\Bin\..\include\stdlib.h
+uccbembedded\main.o: d:\Keil_v5\ARM\ARMC\Bin\..\include\string.h
+uccbembedded\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h
+uccbembedded\main.o: ../Inc/usbd_cdc_if.h
+uccbembedded\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h
+uccbembedded\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h
+uccbembedded\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h
+uccbembedded\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h
+uccbembedded\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h
+uccbembedded\main.o: ../Src/slcan/slcan.h
+uccbembedded\main.o: ../Src/slcan/slcan_additional.h
